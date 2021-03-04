@@ -24,7 +24,7 @@ import static gregtech.common.items.MetaItems.*;
 
 public class GARecipeRemoval {
     public static void init() {
-        ModHandler.removeFurnaceSmelting(MetaItems.FIRECLAY_BRICK.getStackForm());
+        /*ModHandler.removeFurnaceSmelting(MetaItems.FIRECLAY_BRICK.getStackForm());
         ModHandler.removeRecipeByName(new ResourceLocation("gregtech:brick_to_dust"));
         ModHandler.removeRecipeByName(new ResourceLocation("gregtech:brick_block_to_dust"));
         ModHandler.removeRecipeByName(new ResourceLocation("minecraft:bone_meal_from_bone"));
@@ -99,6 +99,6 @@ public class GARecipeRemoval {
         ModHandler.removeRecipeByName(new ResourceLocation("gregtech:wire_coil_superconductor"));
 
         ModHandler.removeRecipes(OreDictUnifier.get(dust, YttriumBariumCuprate, 6));
-        ModHandler.removeRecipes(OreDictUnifier.get(dustTiny, YttriumBariumCuprate, 6));
+        ModHandler.removeRecipes(OreDictUnifier.get(dustTiny, YttriumBariumCuprate, 6));*/
     }
 }

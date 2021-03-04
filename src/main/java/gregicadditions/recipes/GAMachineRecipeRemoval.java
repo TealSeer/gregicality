@@ -74,7 +74,7 @@ public class GAMachineRecipeRemoval {
 //        removeRecipesByInputs(RecipeMaps.MACERATOR_RECIPES, new ItemStack(Items.BRICK));
 
         //Remove GTCE Circuit recipes
-        removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, OreDictUnifier.get(plate, Silicon, 2), OreDictUnifier.get(plate, Polytetrafluoroethylene));
+        /*removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, OreDictUnifier.get(plate, Silicon, 2), OreDictUnifier.get(plate, Polytetrafluoroethylene));
         removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, OreDictUnifier.get(plate, Silicon), OreDictUnifier.get(plate, Plastic));
         removeRecipesByInputs(RecipeMaps.LASER_ENGRAVER_RECIPES, OreDictUnifier.get(foil, Platinum), OreDictUnifier.get(craftingLens, Color.Red));
         removeRecipesByInputs(RecipeMaps.LASER_ENGRAVER_RECIPES, OreDictUnifier.get(foil, Gold), OreDictUnifier.get(craftingLens, Color.Red));
@@ -88,9 +88,9 @@ public class GAMachineRecipeRemoval {
         removeRecipesByInputs(RecipeMaps.LASER_ENGRAVER_RECIPES, OreDictUnifier.get(plate, Olivine), OreDictUnifier.get(craftingLens, Color.Lime));
         removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, MetaItems.ENERGY_LAPOTRONIC_ORB.getStackForm(8), OreDictUnifier.get(plate, Europium, 4));
         removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, MetaItems.ENERGY_LAPOTRONIC_ORB2.getStackForm(8), OreDictUnifier.get(plate, Darmstadtium, 16));
-        removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(dust, Tantalum), OreDictUnifier.get(plate, Manganese)}, new FluidStack[]{Plastic.getFluid(144)});
+        removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(dust, Tantalum), OreDictUnifier.get(plate, Manganese)}, new FluidStack[]{Plastic.getFluid(144)});*/
 
-        for (MaterialStack stack : solderingList) {
+        /*for (MaterialStack stack : solderingList) {
             IngotMaterial material = (IngotMaterial) stack.material;
             int multiplier = (int) stack.amount;
 
@@ -99,14 +99,14 @@ public class GAMachineRecipeRemoval {
             removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(wireGtSingle, RedAlloy, 2), OreDictUnifier.get(plate, Steel)}, new FluidStack[]{material.getFluid(18 * multiplier)});
             ModHandler.removeRecipeByName(new ResourceLocation("gregtech:primitive_circuit"));
             removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(plate, Plastic, 2), MetaItems.DATA_CONTROL_CIRCUIT_IV.getStackForm()}, new FluidStack[]{material.getFluid(72 * multiplier)});
-        }
+        }*/
 
 
-        removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Materials.HypochlorousAcid.getFluid(1000), Materials.Ammonia.getFluid(1000));
-        removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Materials.Ammonia.getFluid(1000), Materials.Methanol.getFluid(2000));
-        removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Materials.Ethylene.getFluid(1000), Materials.Benzene.getFluid(1000));
+        //removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Materials.HypochlorousAcid.getFluid(1000), Materials.Ammonia.getFluid(1000));
+        //removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Materials.Ammonia.getFluid(1000), Materials.Methanol.getFluid(2000));
+        //removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Materials.Ethylene.getFluid(1000), Materials.Benzene.getFluid(1000));
         //Circuit Rabbit Hole-Related Recipe Removal
-        removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, new ItemStack[]{OreDictUnifier.get(dust, Silicon)}, new FluidStack[]{Epichlorhydrin.getFluid(144)});
+        //removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, new ItemStack[]{OreDictUnifier.get(dust, Silicon)}, new FluidStack[]{Epichlorhydrin.getFluid(144)});
 
 
         //remove easy rocket fuel
@@ -117,14 +117,14 @@ public class GAMachineRecipeRemoval {
         removeRecipesByInputs(RecipeMaps.CENTRIFUGE_RECIPES, OreDictUnifier.get(dust, Ash));
 
         //Remove Alloy Smelter Rubber Recipe
-        removeRecipesByInputs(RecipeMaps.ALLOY_SMELTER_RECIPES, OreDictUnifier.get(dust, RawRubber, 3), OreDictUnifier.get(dust, Sulfur));
+        //removeRecipesByInputs(RecipeMaps.ALLOY_SMELTER_RECIPES, OreDictUnifier.get(dust, RawRubber, 3), OreDictUnifier.get(dust, Sulfur));
 
         //Star Recipes
-        removeRecipesByInputs(RecipeMaps.AUTOCLAVE_RECIPES, new ItemStack[]{new ItemStack(Items.NETHER_STAR)}, new FluidStack[]{Darmstadtium.getFluid(288)});
-        removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, OreDictUnifier.get(ingot, Plutonium, 6));
+        //removeRecipesByInputs(RecipeMaps.AUTOCLAVE_RECIPES, new ItemStack[]{new ItemStack(Items.NETHER_STAR)}, new FluidStack[]{Darmstadtium.getFluid(288)});
+        //removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, OreDictUnifier.get(ingot, Plutonium, 6));
 
         //Remove Simple Copper Cable Recipes
-        removeRecipesByInputs(RecipeMaps.ALLOY_SMELTER_RECIPES, OreDictUnifier.get(ingot, Rubber, 2), OreDictUnifier.get(wireGtSingle, Copper));
+        //removeRecipesByInputs(RecipeMaps.ALLOY_SMELTER_RECIPES, OreDictUnifier.get(ingot, Rubber, 2), OreDictUnifier.get(wireGtSingle, Copper));
 
         //Remove Deprecated Recipes
         removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Naphtha.getFluid(288), Air.getFluid(2000));
@@ -138,33 +138,33 @@ public class GAMachineRecipeRemoval {
 
         //Electrolyzing Fixes
         removeRecipesByInputs(RecipeMaps.ELECTROLYZER_RECIPES, OreDictUnifier.get(dust, Sphalerite, 2));
-        removeRecipesByInputs(RecipeMaps.ELECTROLYZER_RECIPES, OreDictUnifier.get(dust, Bentonite, 66));
+        //removeRecipesByInputs(RecipeMaps.ELECTROLYZER_RECIPES, OreDictUnifier.get(dust, Bentonite, 66));
 
         //Remove Silicon incompatability with Boule recipes
-        removeRecipesByInputs(RecipeMaps.BLAST_RECIPES, OreDictUnifier.get(dust, Silicon));
+        //removeRecipesByInputs(RecipeMaps.BLAST_RECIPES, OreDictUnifier.get(dust, Silicon));
 
         //Remove Default Recipes Without Circuits
-        removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Oxygen.getFluid(500), Hydrogen.getFluid(1000));
-        removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Hydrogen.getFluid(2000), Oxygen.getFluid(1000));
-        removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, new ItemStack[]{OreDictUnifier.get(dust, Carbon)}, new FluidStack[]{Hydrogen.getFluid(4000)});
-        removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Nitrogen.getFluid(1000), Oxygen.getFluid(2000));
-        removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Oxygen.getFluid(2000), Nitrogen.getFluid(1000));
+        //removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Oxygen.getFluid(500), Hydrogen.getFluid(1000));
+        //removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Hydrogen.getFluid(2000), Oxygen.getFluid(1000));
+        //removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, new ItemStack[]{OreDictUnifier.get(dust, Carbon)}, new FluidStack[]{Hydrogen.getFluid(4000)});
+        //removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Nitrogen.getFluid(1000), Oxygen.getFluid(2000));
+        //removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Oxygen.getFluid(2000), Nitrogen.getFluid(1000));
 
         //Remove Simple Cetane-Boosted Diesel Recipes
-        removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Glyceryl.getFluid(250), LightFuel.getFluid(1000));
-        removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Glyceryl.getFluid(250), Fuel.getFluid(1000));
-        removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Fuel.getFluid(4000), Glyceryl.getFluid(1000));
-        removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, LightFuel.getFluid(4000), Glyceryl.getFluid(1000));
+        //removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Glyceryl.getFluid(250), LightFuel.getFluid(1000));
+        //removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Glyceryl.getFluid(250), Fuel.getFluid(1000));
+        //removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, Fuel.getFluid(4000), Glyceryl.getFluid(1000));
+        //removeRecipesByInputs(RecipeMaps.CHEMICAL_RECIPES, LightFuel.getFluid(4000), Glyceryl.getFluid(1000));
 
 
         //remove biomas distilery
-        removeRecipesByInputs(RecipeMaps.DISTILLATION_RECIPES, Biomass.getFluid(1000));
-        removeRecipesByInputs(RecipeMaps.DISTILLERY_RECIPES, new IntCircuitIngredient(0).getMatchingStacks(), new FluidStack[]{Biomass.getFluid(1000)});
-        removeRecipesByInputs(RecipeMaps.DISTILLERY_RECIPES, new IntCircuitIngredient(1).getMatchingStacks(), new FluidStack[]{Biomass.getFluid(1000)});
+        //removeRecipesByInputs(RecipeMaps.DISTILLATION_RECIPES, Biomass.getFluid(1000));
+        //removeRecipesByInputs(RecipeMaps.DISTILLERY_RECIPES, new IntCircuitIngredient(0).getMatchingStacks(), new FluidStack[]{Biomass.getFluid(1000)});
+        //removeRecipesByInputs(RecipeMaps.DISTILLERY_RECIPES, new IntCircuitIngredient(1).getMatchingStacks(), new FluidStack[]{Biomass.getFluid(1000)});
 
 
         //Remove Cheap Diesel Recipe
-        removeRecipesByInputs(RecipeMaps.MIXER_RECIPES, LightFuel.getFluid(5000), HeavyFuel.getFluid(1000));
+        //removeRecipesByInputs(RecipeMaps.MIXER_RECIPES, LightFuel.getFluid(5000), HeavyFuel.getFluid(1000));
 
         //Fix Seed Oil Recipe
         removeRecipesByInputs(RecipeMaps.FLUID_EXTRACTION_RECIPES, new ItemStack(Items.WHEAT_SEEDS));
@@ -186,7 +186,7 @@ public class GAMachineRecipeRemoval {
         removeRecipesByInputs(RecipeMaps.CUTTER_RECIPES, new ItemStack[]{OreDictUnifier.get(block, CertusQuartz)}, new FluidStack[]{Lubricant.getFluid(18)});
 
         //Remove GTCE Circuit recipes
-        for (MaterialStack stack : solderingList) {
+        /*for (MaterialStack stack : solderingList) {
             IngotMaterial material = (IngotMaterial) stack.material;
             int multiplier = (int) stack.amount;
 
@@ -216,72 +216,72 @@ public class GAMachineRecipeRemoval {
             removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{MetaItems.WETWARE_BOARD.getStackForm(2), MetaItems.WETWARE_PROCESSOR_ASSEMBLY_ZPM.getStackForm(3), MetaItems.SMD_DIODE.getStackForm(4), MetaItems.NOR_MEMORY_CHIP.getStackForm(4), MetaItems.RANDOM_ACCESS_MEMORY.getStackForm(4), OreDictUnifier.get(wireFine, YttriumBariumCuprate, 6)}, new FluidStack[]{material.getFluid(144 * multiplier)});
             removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{MetaItems.PLASTIC_BOARD.getStackForm(), MetaItems.ADVANCED_CIRCUIT_MV.getStackForm(), MetaItems.NAND_MEMORY_CHIP.getStackForm(32), MetaItems.RANDOM_ACCESS_MEMORY.getStackForm(4), OreDictUnifier.get(wireFine, RedAlloy, 8), OreDictUnifier.get(plate, Plastic, 4)}, new FluidStack[]{material.getFluid(144 * multiplier)});
             removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{MetaItems.EPOXY_BOARD.getStackForm(), MetaItems.NANO_PROCESSOR_HV.getStackForm(), MetaItems.RANDOM_ACCESS_MEMORY.getStackForm(4), MetaItems.RANDOM_ACCESS_MEMORY.getStackForm(32), MetaItems.NAND_MEMORY_CHIP.getStackForm(64), OreDictUnifier.get(wireFine, Platinum, 32)}, new FluidStack[]{material.getFluid(144 * multiplier)});
-        }
+        }*/
 
-        removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{MetaItems.MULTILAYER_FIBER_BOARD.getStackForm(), OreDictUnifier.get(circuit, MarkerMaterials.Tier.Good)}, new FluidStack[]{Polystyrene.getFluid(144)});
-        removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{MetaItems.CENTRAL_PROCESSING_UNIT_WAFER.getStackForm(), MetaItems.CARBON_FIBERS.getStackForm(16)}, new FluidStack[]{Glowstone.getFluid(576)});
+        //removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{MetaItems.MULTILAYER_FIBER_BOARD.getStackForm(), OreDictUnifier.get(circuit, MarkerMaterials.Tier.Good)}, new FluidStack[]{Polystyrene.getFluid(144)});
+        //removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{MetaItems.CENTRAL_PROCESSING_UNIT_WAFER.getStackForm(), MetaItems.CARBON_FIBERS.getStackForm(16)}, new FluidStack[]{Glowstone.getFluid(576)});
 
         //Remove GTCE's Engraved Crystal Chip recipes
-        removeRecipesByInputs(RecipeMaps.BLAST_RECIPES, new ItemStack[]{OreDictUnifier.get(plate, Emerald, 10), OreDictUnifier.get(gemExquisite, Emerald)}, new FluidStack[]{Helium.getFluid(5000)});
-        removeRecipesByInputs(RecipeMaps.BLAST_RECIPES, new ItemStack[]{OreDictUnifier.get(plate, Olivine, 10), OreDictUnifier.get(gemExquisite, Olivine)}, new FluidStack[]{Helium.getFluid(5000)});
-        removeRecipesByInputs(RecipeMaps.LASER_ENGRAVER_RECIPES, MetaItems.ENGRAVED_CRYSTAL_CHIP.getStackForm(), OreDictUnifier.get(craftingLens, MarkerMaterials.Color.Lime));
+        //removeRecipesByInputs(RecipeMaps.BLAST_RECIPES, new ItemStack[]{OreDictUnifier.get(plate, Emerald, 10), OreDictUnifier.get(gemExquisite, Emerald)}, new FluidStack[]{Helium.getFluid(5000)});
+        //removeRecipesByInputs(RecipeMaps.BLAST_RECIPES, new ItemStack[]{OreDictUnifier.get(plate, Olivine, 10), OreDictUnifier.get(gemExquisite, Olivine)}, new FluidStack[]{Helium.getFluid(5000)});
+        //removeRecipesByInputs(RecipeMaps.LASER_ENGRAVER_RECIPES, MetaItems.ENGRAVED_CRYSTAL_CHIP.getStackForm(), OreDictUnifier.get(craftingLens, MarkerMaterials.Color.Lime));
         //Remove Simple Superconductor recipe
-        removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(wireGtSingle, YttriumBariumCuprate, 3), OreDictUnifier.get(plate, TungstenSteel, 3), MetaItems.ELECTRIC_PUMP_LV.getStackForm()}, new FluidStack[]{Nitrogen.getFluid(2000)});
-        removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(wireGtSingle, NiobiumTitanium, 3), OreDictUnifier.get(plate, TungstenSteel, 3), MetaItems.ELECTRIC_PUMP_LV.getStackForm()}, new FluidStack[]{Nitrogen.getFluid(2000)});
-        removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(wireGtSingle, VanadiumGallium, 3), OreDictUnifier.get(plate, TungstenSteel, 3), MetaItems.ELECTRIC_PUMP_LV.getStackForm()}, new FluidStack[]{Nitrogen.getFluid(2000)});
+        //removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(wireGtSingle, YttriumBariumCuprate, 3), OreDictUnifier.get(plate, TungstenSteel, 3), MetaItems.ELECTRIC_PUMP_LV.getStackForm()}, new FluidStack[]{Nitrogen.getFluid(2000)});
+        //removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(wireGtSingle, NiobiumTitanium, 3), OreDictUnifier.get(plate, TungstenSteel, 3), MetaItems.ELECTRIC_PUMP_LV.getStackForm()}, new FluidStack[]{Nitrogen.getFluid(2000)});
+        //removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(wireGtSingle, VanadiumGallium, 3), OreDictUnifier.get(plate, TungstenSteel, 3), MetaItems.ELECTRIC_PUMP_LV.getStackForm()}, new FluidStack[]{Nitrogen.getFluid(2000)});
 
         //Remove Simple Coil Recipes
-        removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, OreDictUnifier.get(wireGtDouble, Cupronickel, 8), IntCircuitIngredient.getIntegratedCircuit(8));
+        /*removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, OreDictUnifier.get(wireGtDouble, Cupronickel, 8), IntCircuitIngredient.getIntegratedCircuit(8));
         removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, OreDictUnifier.get(wireGtDouble, Kanthal, 8), IntCircuitIngredient.getIntegratedCircuit(8));
         removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, OreDictUnifier.get(wireGtDouble, Nichrome, 8), IntCircuitIngredient.getIntegratedCircuit(8));
         removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, OreDictUnifier.get(wireGtDouble, TungstenSteel, 8), IntCircuitIngredient.getIntegratedCircuit(8));
         removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, OreDictUnifier.get(wireGtDouble, HSSG, 8), IntCircuitIngredient.getIntegratedCircuit(8));
         removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, OreDictUnifier.get(wireGtDouble, Naquadah, 8), IntCircuitIngredient.getIntegratedCircuit(8));
         removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, OreDictUnifier.get(wireGtDouble, NaquadahAlloy, 8), IntCircuitIngredient.getIntegratedCircuit(8));
-        removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, OreDictUnifier.get(wireGtDouble, MarkerMaterials.Tier.Superconductor, 8), IntCircuitIngredient.getIntegratedCircuit(8));
+        removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, OreDictUnifier.get(wireGtDouble, MarkerMaterials.Tier.Superconductor, 8), IntCircuitIngredient.getIntegratedCircuit(8));*/
 
         //Remove Circuit Component Recipes
-        removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(plate, Wood, 8), MetaItems.RUBBER_DROP.getStackForm()}, new FluidStack[]{Glue.getFluid(100)});
+        /*removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(plate, Wood, 8), MetaItems.RUBBER_DROP.getStackForm()}, new FluidStack[]{Glue.getFluid(100)});
         removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(wireFine, AnnealedCopper, 4), OreDictUnifier.get(dustSmall, Gallium)}, new FluidStack[]{Plastic.getFluid(288)});
         removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(wireFine, Platinum, 4), OreDictUnifier.get(dustSmall, Gallium)}, new FluidStack[]{Plastic.getFluid(288)});
         removeRecipesByInputs(RecipeMaps.BLAST_RECIPES, OreDictUnifier.get(dust, Silicon, 32), OreDictUnifier.get(dustTiny, Gallium), IntCircuitIngredient.getIntegratedCircuit(1));
-        removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, OreDictUnifier.get(wireFine, Copper, 4), OreDictUnifier.get(dust, Coal));
+        removeRecipesByInputs(RecipeMaps.ASSEMBLER_RECIPES, OreDictUnifier.get(wireFine, Copper, 4), OreDictUnifier.get(dust, Coal));*/
 
         //Remove Nuclear processing
-        removeRecipesByInputs(RecipeMaps.CENTRIFUGE_RECIPES, OreDictUnifier.get(dust, Uranium));
-        removeRecipesByInputs(RecipeMaps.CENTRIFUGE_RECIPES, OreDictUnifier.get(dust, Plutonium));
+        //removeRecipesByInputs(RecipeMaps.CENTRIFUGE_RECIPES, OreDictUnifier.get(dust, Uranium));
+        //removeRecipesByInputs(RecipeMaps.CENTRIFUGE_RECIPES, OreDictUnifier.get(dust, Plutonium));
 
         //remove Brewing
 
 
         //remove old casing
-        removeRecipesByInputs(ASSEMBLER_RECIPES, OreDictUnifier.get(plate, Invar, 6), OreDictUnifier.get(frameGt, Invar, 1));
+        /*removeRecipesByInputs(ASSEMBLER_RECIPES, OreDictUnifier.get(plate, Invar, 6), OreDictUnifier.get(frameGt, Invar, 1));
         removeRecipesByInputs(ASSEMBLER_RECIPES, OreDictUnifier.get(plate, Steel, 6), OreDictUnifier.get(frameGt, Steel, 1));
         removeRecipesByInputs(ASSEMBLER_RECIPES, OreDictUnifier.get(plate, Aluminium, 6), OreDictUnifier.get(frameGt, Aluminium, 1));
         removeRecipesByInputs(ASSEMBLER_RECIPES, OreDictUnifier.get(plate, TungstenSteel, 6), OreDictUnifier.get(frameGt, TungstenSteel, 1));
         removeRecipesByInputs(ASSEMBLER_RECIPES, OreDictUnifier.get(plate, StainlessSteel, 6), OreDictUnifier.get(frameGt, StainlessSteel, 1));
-        removeRecipesByInputs(ASSEMBLER_RECIPES, OreDictUnifier.get(plate, Titanium, 6), OreDictUnifier.get(frameGt, Titanium, 1));
+        removeRecipesByInputs(ASSEMBLER_RECIPES, OreDictUnifier.get(plate, Titanium, 6), OreDictUnifier.get(frameGt, Titanium, 1));*/
 
         //remove platinum and palladium
-        removeRecipesByInputs(CHEMICAL_RECIPES, new ItemStack[]{OreDictUnifier.get(crushedPurified, Chalcopyrite)}, new FluidStack[]{NitricAcid.getFluid(1000)});
-        removeRecipesByInputs(CHEMICAL_RECIPES, new ItemStack[]{OreDictUnifier.get(crushedPurified, Pentlandite)}, new FluidStack[]{NitricAcid.getFluid(1000)});
-        removeRecipesByInputs(CENTRIFUGE_RECIPES, OreDictUnifier.get(dust, PlatinumGroupSludge));
-        removeRecipesByInputs(CENTRIFUGE_RECIPES, OreDictUnifier.get(dust, Endstone));
+        //removeRecipesByInputs(CHEMICAL_RECIPES, new ItemStack[]{OreDictUnifier.get(crushedPurified, Chalcopyrite)}, new FluidStack[]{NitricAcid.getFluid(1000)});
+        //removeRecipesByInputs(CHEMICAL_RECIPES, new ItemStack[]{OreDictUnifier.get(crushedPurified, Pentlandite)}, new FluidStack[]{NitricAcid.getFluid(1000)});
+        //removeRecipesByInputs(CENTRIFUGE_RECIPES, OreDictUnifier.get(dust, PlatinumGroupSludge));
+        //removeRecipesByInputs(CENTRIFUGE_RECIPES, OreDictUnifier.get(dust, Endstone));
 
         //change rare earth
-        removeRecipesByInputs(CENTRIFUGE_RECIPES, OreDictUnifier.get(dust, RareEarth));
+        //removeRecipesByInputs(CENTRIFUGE_RECIPES, OreDictUnifier.get(dust, RareEarth));
 
         //remove old uranium recipe
-        removeRecipesByInputs(CHEMICAL_RECIPES, OreDictUnifier.get(dust, Uraninite), OreDictUnifier.get(dust, Aluminium));
-        removeRecipesByInputs(CHEMICAL_RECIPES, OreDictUnifier.get(dust, Uraninite), OreDictUnifier.get(dust, Magnesium));
+        //removeRecipesByInputs(CHEMICAL_RECIPES, OreDictUnifier.get(dust, Uraninite), OreDictUnifier.get(dust, Aluminium));
+        //removeRecipesByInputs(CHEMICAL_RECIPES, OreDictUnifier.get(dust, Uraninite), OreDictUnifier.get(dust, Magnesium));
 
-        removeRecipesByInputs(MIXER_RECIPES, OreDictUnifier.get(dust, Copper, 3), OreDictUnifier.get(dust, Barium, 2), OreDictUnifier.get(dust, Yttrium));
+        //removeRecipesByInputs(MIXER_RECIPES, OreDictUnifier.get(dust, Copper, 3), OreDictUnifier.get(dust, Barium, 2), OreDictUnifier.get(dust, Yttrium));
 
-        removeRecipesByInputs(ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(circuit, MarkerMaterials.Tier.Basic, 4), OreDictUnifier.get(dust, EnderPearl)}, new FluidStack[]{Osmium.getFluid(288)});
+        /*removeRecipesByInputs(ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(circuit, MarkerMaterials.Tier.Basic, 4), OreDictUnifier.get(dust, EnderPearl)}, new FluidStack[]{Osmium.getFluid(288)});
         removeRecipesByInputs(ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(circuit, MarkerMaterials.Tier.Good, 4), OreDictUnifier.get(dust, EnderEye)}, new FluidStack[]{Osmium.getFluid(576)});
         removeRecipesByInputs(ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(circuit, MarkerMaterials.Tier.Advanced, 4), QUANTUM_EYE.getStackForm()}, new FluidStack[]{Osmium.getFluid(1152)});
         removeRecipesByInputs(ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(circuit, MarkerMaterials.Tier.Extreme, 4), OreDictUnifier.get(dust, NetherStar)}, new FluidStack[]{Osmium.getFluid(2304)});
-        removeRecipesByInputs(ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(circuit, MarkerMaterials.Tier.Elite, 4), QUANTUM_STAR.getStackForm()}, new FluidStack[]{Osmium.getFluid(4608)});
+        removeRecipesByInputs(ASSEMBLER_RECIPES, new ItemStack[]{OreDictUnifier.get(circuit, MarkerMaterials.Tier.Elite, 4), QUANTUM_STAR.getStackForm()}, new FluidStack[]{Osmium.getFluid(4608)});*/
 
         List<Recipe> recipes = new ArrayList<Recipe>();
         for (Recipe recipe : ASSEMBLER_RECIPES.getRecipeList()) {

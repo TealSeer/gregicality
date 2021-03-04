@@ -55,7 +55,7 @@ public class MachineCraftingRecipes {
 
     public static void init() {
         //Removal
-        for (String tier : tiers) {
+        /*for (String tier : tiers) {
             ModHandler.removeRecipeByName(new ResourceLocation("gregtech:gregtech.machine.alloy_smelter." + tier));
             ModHandler.removeRecipeByName(new ResourceLocation("gregtech:gregtech.machine.assembler." + tier));
             ModHandler.removeRecipeByName(new ResourceLocation("gregtech:gregtech.machine.bender." + tier));
@@ -146,7 +146,7 @@ public class MachineCraftingRecipes {
         ModHandler.removeRecipeByName(new ResourceLocation("gregtech:transformer_luv"));
         ModHandler.removeRecipeByName(new ResourceLocation("gregtech:transformer_zpm"));
         ModHandler.removeRecipeByName(new ResourceLocation("gregtech:transformer_uv"));
-        ModHandler.removeRecipeByName(new ResourceLocation("gregtech:transformer_max"));
+        ModHandler.removeRecipeByName(new ResourceLocation("gregtech:transformer_max"));*/
 
         //rotor hot coolant
         ModHandler.addShapedRecipe("ga_rotor_holder_hv", GATileEntities.ROTOR_HOLDER[0].getStackForm(), "WHW", "WRW", "WWW", 'H', MetaTileEntities.HULL[GAValues.HV].getStackForm(), 'W', new UnificationEntry(wireGtHex, Gold), 'R', new UnificationEntry(gear, BlackSteel));
@@ -726,7 +726,7 @@ public class MachineCraftingRecipes {
         //Machines
         registerMachineRecipe(GATileEntities.CIRCUITASSEMBLER, "ACE", "VMV", "WCW", 'M', HULL, 'V', CONVEYOR, 'A', ROBOT_ARM, 'C', BETTER_CIRCUIT, 'W', CABLE_SINGLE, 'E', EMITTER);
         registerMachineRecipe(GATileEntities.CLUSTERMILL, "MMM", "CHC", "MMM", 'M', MOTOR, 'C', CIRCUIT, 'H', HULL);
-        registerMachineRecipe(MetaTileEntities.ALLOY_SMELTER, "ECE", "CMC", "WCW", 'M', HULL, 'E', CIRCUIT, 'W', CABLE_SINGLE, 'C', COIL_HEATING_DOUBLE);
+        /*registerMachineRecipe(MetaTileEntities.ALLOY_SMELTER, "ECE", "CMC", "WCW", 'M', HULL, 'E', CIRCUIT, 'W', CABLE_SINGLE, 'C', COIL_HEATING_DOUBLE);
         registerMachineRecipe(MetaTileEntities.ASSEMBLER, "ACA", "VMV", "WCW", 'M', HULL, 'V', CONVEYOR, 'A', ROBOT_ARM, 'C', CIRCUIT, 'W', CABLE_SINGLE);
         registerMachineRecipe(MetaTileEntities.BENDER, "PwP", "CMC", "EWE", 'M', HULL, 'E', MOTOR, 'P', PISTON, 'C', CIRCUIT, 'W', CABLE_SINGLE);
         registerMachineRecipe(MetaTileEntities.CANNER, "WPW", "CMC", "GGG", 'M', HULL, 'P', PUMP, 'C', CIRCUIT, 'W', CABLE_SINGLE, 'G', GLASS);
@@ -765,7 +765,7 @@ public class MachineCraftingRecipes {
         registerMachineRecipe(MetaTileEntities.ARC_FURNACE, "WGW", "CMC", "PPP", 'M', HULL, 'P', PLATE, 'C', CIRCUIT, 'W', CABLE_QUAD, 'G', new UnificationEntry(ingot, Graphite));
         registerMachineRecipe(MetaTileEntities.PLASMA_ARC_FURNACE, "WGW", "CMC", "TPT", 'M', HULL, 'P', PLATE, 'C', BETTER_CIRCUIT, 'W', CABLE_QUAD, 'T', PUMP, 'G', new UnificationEntry(ingot, Graphite));
         registerMachineRecipe(MetaTileEntities.PUMP, "WGW", "GMG", "TGT", 'M', HULL, 'W', CIRCUIT, 'G', PUMP, 'T', PIPE);
-        registerMachineRecipe(MetaTileEntities.AIR_COLLECTOR, "WFW", "PHP", "WCW", 'W', Blocks.IRON_BARS, 'F', MetaItems.ITEM_FILTER, 'P', PUMP, 'H', HULL, 'C', CIRCUIT);
+        registerMachineRecipe(MetaTileEntities.AIR_COLLECTOR, "WFW", "PHP", "WCW", 'W', Blocks.IRON_BARS, 'F', MetaItems.ITEM_FILTER, 'P', PUMP, 'H', HULL, 'C', CIRCUIT);*/
         registerMachineRecipe(GATileEntities.WORLD_ACCELERATOR, "ABC", "DHE", "FGI", 'H', HULL, 'A', PISTON, 'B', ROBOT_ARM, 'C', PUMP, 'D', MOTOR, 'E', CONVEYOR, 'F', EMITTER, 'G', SENSOR, 'I', FIELD_GENERATOR);
         registerMachineRecipe(GATileEntities.MINER, "WPW", "CMC", "SPS", 'M', HULL, 'P', PISTON, 'C', CIRCUIT, 'W', MetaItems.COMPONENT_GRINDER_DIAMOND, 'S', SENSOR);
         registerMachineRecipe(GATileEntities.DEHYDRATOR, "WCW", "MHM", "GAG", 'C', CIRCUIT, 'M', CABLE_QUAD, 'H', HULL, 'G', GEAR, 'A', ROBOT_ARM, 'W', COIL_HEATING_DOUBLE);

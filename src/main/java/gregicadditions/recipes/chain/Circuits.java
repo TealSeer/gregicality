@@ -34,10 +34,10 @@ public class Circuits {
         };
 
         //Circuit Rabbit Hole - Layer 1
-        ModHandler.removeRecipes(BASIC_CIRCUIT_LV.getStackForm());
-        ModHandler.removeRecipeByName(new ResourceLocation("gregtech:good_circuit"));
-        ModHandler.addShapedRecipe("primitive_processor", BASIC_CIRCUIT_LV.getStackForm(), "RPR", "TBT", "CCC", 'R', RESISTOR, 'P', new UnificationEntry(plate, WroughtIron), 'T', VACUUM_TUBE, 'B', BASIC_BOARD, 'C', new UnificationEntry(cableGtSingle, RedAlloy));
-        ModHandler.addShapedRecipe("primitive_assembly", PRIMITIVE_ASSEMBLY.getStackForm(), "PCT", "CDC", "TCP", 'C', BASIC_CIRCUIT_LV, 'P', new UnificationEntry(plate, WroughtIron), 'D', DIODE, 'T', new UnificationEntry(cableGtSingle, RedAlloy));
+        //ModHandler.removeRecipes(BASIC_CIRCUIT_LV.getStackForm());
+        //ModHandler.removeRecipeByName(new ResourceLocation("gregtech:good_circuit"));
+        //ModHandler.addShapedRecipe("primitive_processor", BASIC_CIRCUIT_LV.getStackForm(), "RPR", "TBT", "CCC", 'R', RESISTOR, 'P', new UnificationEntry(plate, WroughtIron), 'T', VACUUM_TUBE, 'B', BASIC_BOARD, 'C', new UnificationEntry(cableGtSingle, RedAlloy));
+        //ModHandler.addShapedRecipe("primitive_assembly", PRIMITIVE_ASSEMBLY.getStackForm(), "PCT", "CDC", "TCP", 'C', BASIC_CIRCUIT_LV, 'P', new UnificationEntry(plate, WroughtIron), 'D', DIODE, 'T', new UnificationEntry(cableGtSingle, RedAlloy));
 
         for (String fluid : GAConfig.Misc.solderingFluidList) {
             String[] fluidSplit = fluid.split(":");
@@ -506,7 +506,7 @@ public class Circuits {
         ASSEMBLER_RECIPES.recipeBuilder().duration(400).EUt(480).inputs(ELITE_BOARD.getStackForm(), PETRI_DISH.getStackForm(), ELECTRIC_PUMP_LV.getStackForm(), SENSOR_LV.getStackForm()).input(circuit, MarkerMaterials.Tier.Good).fluidInputs(SterileGrowthMedium.getFluid(250)).outputs(WETWARE_BOARD.getStackForm()).buildAndRegister();
         MIXER_RECIPES.recipeBuilder().duration(30).EUt(480).fluidInputs(PositiveMatter.getFluid(10), NeutralMatter.getFluid(10)).fluidOutputs(UUMatter.getFluid(20)).buildAndRegister();
 
-        ModHandler.removeRecipes(COATED_BOARD.getStackForm(3));
+        /*ModHandler.removeRecipes(COATED_BOARD.getStackForm(3));
         ModHandler.addShapedRecipe("coated_board_shaped", COATED_BOARD.getStackForm(3), "RRR", "BBB", "RRR", 'R', RUBBER_DROP, 'B', "plateWood");
         ModHandler.addShapelessRecipe("coated_board_shapeless", COATED_BOARD.getStackForm(), RUBBER_DROP, RUBBER_DROP, "plateWood");
         ModHandler.addShapedRecipe("basic_board", BASIC_BOARD.getStackForm(), "WWW", "WBW", "WWW", 'W', new UnificationEntry(wireGtSingle, Copper), 'B', COATED_BOARD);
@@ -535,17 +535,17 @@ public class Circuits {
         ASSEMBLER_RECIPES.recipeBuilder().duration(600).EUt(30).input(wireFine, AnnealedCopper, 4).inputs(SILICON_WAFER.getStackForm()).fluidInputs(Glass.getFluid(288)).outputs(DIODE.getStackForm()).buildAndRegister();
         ASSEMBLER_RECIPES.recipeBuilder().duration(600).EUt(30).input(wireFine, Copper, 4).inputs(SILICON_WAFER.getStackForm()).fluidInputs(Plastic.getFluid(144)).outputs(DIODE.getStackForm(2)).buildAndRegister();
         ASSEMBLER_RECIPES.recipeBuilder().duration(600).EUt(30).input(wireFine, AnnealedCopper, 4).inputs(SILICON_WAFER.getStackForm()).fluidInputs(Plastic.getFluid(144)).outputs(DIODE.getStackForm(2)).buildAndRegister();
-        ASSEMBLER_RECIPES.recipeBuilder().duration(600).EUt(30).input(wireFine, Platinum, 8).input(dust, GalliumArsenide).fluidInputs(Plastic.getFluid(288)).outputs(SMD_DIODE.getStackForm(32)).buildAndRegister();
+        ASSEMBLER_RECIPES.recipeBuilder().duration(600).EUt(30).input(wireFine, Platinum, 8).input(dust, GalliumArsenide).fluidInputs(Plastic.getFluid(288)).outputs(SMD_DIODE.getStackForm(32)).buildAndRegister();*/
 
-        ModHandler.removeRecipes(RESISTOR.getStackForm(3));
+        //ModHandler.removeRecipes(RESISTOR.getStackForm(3));
         for (Material m : new Material[]{Coal, Charcoal, Carbon}) {
             if (GAConfig.GT6.BendingFoils) {
                 ModHandler.addShapedRecipe(String.format(Gregicality.MODID + ":resistor_%s", m.toString()), RESISTOR.getStackForm(), "RWR", "CMC", " W ", 'M', new UnificationEntry(dust, m), 'R', RUBBER_DROP, 'W', "wireFineCopper", 'C', "wireGtSingleCopper");
             } else {
                 ModHandler.addShapedRecipe(String.format(Gregicality.MODID + ":resistor_%s", m.toString()), RESISTOR.getStackForm(), "RCR", "CMC", " C ", 'M', new UnificationEntry(dust, m), 'R', RUBBER_DROP, 'C', "wireGtSingleCopper");
             }
-            ASSEMBLER_RECIPES.recipeBuilder().duration(320).EUt(16).input(dust, m).input(wireFine, Copper, 4).input(wireGtSingle, Copper, 4).fluidInputs(Glue.getFluid(200)).outputs(RESISTOR.getStackForm(8)).buildAndRegister();
-            ASSEMBLER_RECIPES.recipeBuilder().duration(320).EUt(16).input(dust, m).input(wireFine, AnnealedCopper, 4).input(wireGtSingle, Copper, 4).fluidInputs(Glue.getFluid(200)).outputs(RESISTOR.getStackForm(8)).buildAndRegister();
+            //ASSEMBLER_RECIPES.recipeBuilder().duration(320).EUt(16).input(dust, m).input(wireFine, Copper, 4).input(wireGtSingle, Copper, 4).fluidInputs(Glue.getFluid(200)).outputs(RESISTOR.getStackForm(8)).buildAndRegister();
+            //ASSEMBLER_RECIPES.recipeBuilder().duration(320).EUt(16).input(dust, m).input(wireFine, AnnealedCopper, 4).input(wireGtSingle, Copper, 4).fluidInputs(Glue.getFluid(200)).outputs(RESISTOR.getStackForm(8)).buildAndRegister();
         }
 
         //Cutting Machine Recipes
@@ -566,7 +566,7 @@ public class Circuits {
         CHEMICAL_RECIPES.recipeBuilder().duration(400).EUt(30).input(dust, Iron).fluidInputs(HydrochloricAcid.getFluid(2000)).fluidOutputs(IronChloride.getFluid(3000), Hydrogen.getFluid(3000)).buildAndRegister();
 
         //Circuit Rabbit Hole - Layer 4
-        ModHandler.removeRecipes(OreDictUnifier.get(dust, Materials.ReinforcedEpoxyResin));
+        //ModHandler.removeRecipes(OreDictUnifier.get(dust, Materials.ReinforcedEpoxyResin));
 
         AUTOCLAVE_RECIPES.recipeBuilder().duration(12000).EUt(320).inputs(OreDictUnifier.get(gemExquisite, Olivine)).fluidInputs(Rutherfordium.getFluid(72)).chancedOutput(RAW_CRYSTAL_CHIP.getStackForm(), 5000, 750).buildAndRegister();
         AUTOCLAVE_RECIPES.recipeBuilder().duration(12000).EUt(320).inputs(OreDictUnifier.get(gemExquisite, Emerald)).fluidInputs(Rutherfordium.getFluid(72)).chancedOutput(RAW_CRYSTAL_CHIP.getStackForm(), 5000, 750).buildAndRegister();
