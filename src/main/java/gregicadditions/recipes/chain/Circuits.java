@@ -506,9 +506,9 @@ public class Circuits {
         ASSEMBLER_RECIPES.recipeBuilder().duration(400).EUt(480).inputs(ELITE_BOARD.getStackForm(), PETRI_DISH.getStackForm(), ELECTRIC_PUMP_LV.getStackForm(), SENSOR_LV.getStackForm()).input(circuit, MarkerMaterials.Tier.Good).fluidInputs(SterileGrowthMedium.getFluid(250)).outputs(WETWARE_BOARD.getStackForm()).buildAndRegister();
         MIXER_RECIPES.recipeBuilder().duration(30).EUt(480).fluidInputs(PositiveMatter.getFluid(10), NeutralMatter.getFluid(10)).fluidOutputs(UUMatter.getFluid(20)).buildAndRegister();
 
-        /*ModHandler.removeRecipes(COATED_BOARD.getStackForm(3));
-        ModHandler.addShapedRecipe("coated_board_shaped", COATED_BOARD.getStackForm(3), "RRR", "BBB", "RRR", 'R', RUBBER_DROP, 'B', "plateWood");
-        ModHandler.addShapelessRecipe("coated_board_shapeless", COATED_BOARD.getStackForm(), RUBBER_DROP, RUBBER_DROP, "plateWood");
+        //ModHandler.removeRecipes(COATED_BOARD.getStackForm(3));
+        //ModHandler.addShapedRecipe("coated_board_shaped", COATED_BOARD.getStackForm(3), "RRR", "BBB", "RRR", 'R', RUBBER_DROP, 'B', "plateWood");
+        //ModHandler.addShapelessRecipe("coated_board_shapeless", COATED_BOARD.getStackForm(), RUBBER_DROP, RUBBER_DROP, "plateWood");
         ModHandler.addShapedRecipe("basic_board", BASIC_BOARD.getStackForm(), "WWW", "WBW", "WWW", 'W', new UnificationEntry(wireGtSingle, Copper), 'B', COATED_BOARD);
         ASSEMBLER_RECIPES.recipeBuilder().duration(40).EUt(20).input(plate, Wood).input(foil, Copper, 4).fluidInputs(Glue.getFluid(72)).outputs(BASIC_BOARD.getStackForm()).buildAndRegister();
         ModHandler.addShapedRecipe("good_board", GOOD_PHENOLIC_BOARD.getStackForm(), "WWW", "WBW", "WWW", 'W', new UnificationEntry(wireGtSingle, Gold), 'B', PHENOLIC_BOARD);
@@ -525,7 +525,7 @@ public class Circuits {
         CHEMICAL_RECIPES.recipeBuilder().duration(3000).EUt(480).inputs(WETWARE_BOARD.getStackForm()).input(foil, NiobiumTitanium, 32).fluidInputs(SodiumPersulfate.getFluid(10000)).outputs(MASTER_BOARD.getStackForm()).buildAndRegister();
         CHEMICAL_RECIPES.recipeBuilder().duration(3000).EUt(480).inputs(WETWARE_BOARD.getStackForm()).input(foil, NiobiumTitanium, 32).fluidInputs(IronChloride.getFluid(5000)).outputs(MASTER_BOARD.getStackForm()).buildAndRegister();
 
-        ModHandler.removeRecipeByName(new ResourceLocation("gregtech:diode"));
+        /*ModHandler.removeRecipeByName(new ResourceLocation("gregtech:diode"));
         ModHandler.addShapedRecipe("ga_diode", DIODE.getStackForm(), " P ", "CGC", " P ", 'P', "paneGlassColorless", 'C', new UnificationEntry(wireFine, Copper), 'G', new UnificationEntry(dustSmall, Gallium));
         ASSEMBLER_RECIPES.recipeBuilder().duration(600).EUt(30).input(wireFine, Copper, 4).input(dustSmall, GalliumArsenide).fluidInputs(Glass.getFluid(288)).outputs(DIODE.getStackForm(2)).buildAndRegister();
         ASSEMBLER_RECIPES.recipeBuilder().duration(600).EUt(30).input(wireFine, AnnealedCopper, 4).input(dustSmall, GalliumArsenide).fluidInputs(Glass.getFluid(288)).outputs(DIODE.getStackForm(2)).buildAndRegister();
